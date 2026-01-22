@@ -1,6 +1,8 @@
 # PipeFlow
 
-Fun-In-Progress GUI for [PipeWire](https://pipewire.org/)
+Fun-In-Progress GUI for [PipeWire](https://pipewire.org/), originally by Oskude
+
+Now working on a rewrite at https://github.com/stuin/PipeflowIm, hopefully planning to keep the features comparable
 
 ![](screenshot.png)
 
@@ -9,7 +11,12 @@ Fun-In-Progress GUI for [PipeWire](https://pipewire.org/)
 - Display Nodes, Ports and Links
 - Create and destroy Links
 - Set channel volume (for ALSA and PulseAudio)
+- Lock channel volumes together
+- Configurable max volume > 1
+- Configure hidden nodes
+- Mute nodes
 - Move Nodes (but will be reset after model changes!)
+- Auto layout based on different groupings
 
 ## Todo
 
@@ -17,12 +24,10 @@ Fun-In-Progress GUI for [PipeWire](https://pipewire.org/)
   - https://www.collabora.com/news-and-blog/blog/2023/06/15/wireplumber-event-dispatcher-new-simplified-way-handling-pipewire-events/
 - user change node/port label
 - user set auto/default links/nodes!
-- how to best auto layout?
 - can we set all (audio) nodes channelVolume?
   - seems we can for alsa and pulse. what about jack?
 - what is softVolume?
 - show live audio levels?
-- un/lock channel volume sliders
 - can we use https://gitlab.com/matpi/pipewire-py ?
   - i guess we would look `pw-dump` code for howto?
 
